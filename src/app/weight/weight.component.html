@@ -1,0 +1,15 @@
+<div class="container">
+    <h3>Por favor, ingrese su peso en kg</h3>
+    <form [formGroup]="fg">
+        <div class="input-group mb-3">
+            <input 
+            formControlName="weight" 
+            name="weight"
+            type="number" class="form-control" placeholder="Para decimales, use puntos. Ej: 83.5" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" (click)="next($event)" [disabled]="!fg.valid">Continuar</button>
+            </div>
+          </div>
+    </form>
+
+</div>
